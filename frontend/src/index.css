@@ -1,10 +1,40 @@
-body {
+* {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #660000;
+    --thirdly-color: #CC0000;
+    --fourthly-color: #E6E6E6;
+}
+
+@font-face {
+    font-family: 'Oxygen - Regular';
+    src: local('Oxygen-Regular'),
+    url(./utils/global/fonts/OxygenRegular/Oxygen-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Oleo Script';
+    src: local('Oleo-Script'),
+    url(./utils/global/fonts/OleoScript/OleoScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'El Messiri';
+    src: local('El-Messiri'),
+    url(./utils/global/fonts/El_Messiri/static/ElMessiri-Regular.ttf) format('truetype')
+}
+
+body {
+    font-family: 'Oxygen - Regular', 'Oleo Script', 'El Messiri', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary-color);
+    color: var(--fourthly-color);
 }
 
 code {
