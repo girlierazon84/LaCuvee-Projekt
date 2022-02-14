@@ -15,6 +15,7 @@ export const StyledBurger = styled.div<Props>`
   right: 10px;
   
   @media (max-width: 1100px) {
+    //position: fixed;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;

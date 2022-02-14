@@ -30,6 +30,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  border-bottom: 2px solid var(--secondary-color);
   
   .LC__logo {
     width: 20em;

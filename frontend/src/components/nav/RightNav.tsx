@@ -107,6 +107,7 @@ const Ul = styled.ul<Props>`
     width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    z-index: 2;
   }
 `
 
@@ -143,6 +144,7 @@ const LiRight = styled.li`
     top: 65px;
     right: 168px;
     border-radius: 10px;
+    z-index: 10;
   }
   
   .list__items {
