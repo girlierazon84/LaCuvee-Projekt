@@ -71,7 +71,7 @@ const SectionTwo = styled.section`
 `
 
 const SectionThree = styled.section`
-  padding: 0 50px 20px 50px;
+  padding: 0 50px 50px 50px;
   
   p {
     text-align: justify;
