@@ -62,10 +62,8 @@ const FestWrapper = styled.section`
   text-align: justify;
   font-family: 'El Messiri', sans-serif;
   display: grid;
-  width: 100%;
-  height: 100%;
   grid-template-rows: 150px 2fr;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: 'top top'
                     'right left'
                     'right left';
@@ -99,15 +97,15 @@ const SectionOne = styled.section`
 `
 
 const SectionTwo = styled.section`
-  margin: 155px 0;
+  margin: 156px 0;
   
   .image {
     grid-area: right;
   }
   
   img {
-    width: 87.5%;
-    height: 642px;
+    width: 89%;
+    height: 610px;
   }
 
   @media (max-width: 1100px) {
@@ -120,8 +118,7 @@ const SectionTwo = styled.section`
 `
 
 const SectionThree = styled.section`
-  padding: 0 50px 50px 50px;
-  width: 100%;
+  margin: 0 50px 50px 50px;
   
   .paragraph {
     grid-area: left;
@@ -132,6 +129,6 @@ const SectionThree = styled.section`
   }
 
   @media (max-width: 1100px) {
-    padding: 20px;
+    margin: 20px;
   }
 `
