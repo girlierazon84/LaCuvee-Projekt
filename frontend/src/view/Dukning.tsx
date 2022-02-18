@@ -98,6 +98,7 @@ const SectionTwo = styled.section`
   img {
     width: 89%;
     height: 367px;
+    border: 1px solid var(--secondary-color);
   }
 
   @media (max-width: 1100px) {

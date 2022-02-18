@@ -125,6 +125,7 @@ const SectionThree = styled.section`
   img {
     width: 95%;
     height: 940px;
+    border: 1px solid var(--secondary-color);
   }
 
   @media (max-width: 1100px) {
