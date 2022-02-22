@@ -4,7 +4,7 @@ import ImageSlideShow from '../components/slideshow/ImageSlideShow';
 import HomeText from "../components/hem/HomeText";
 
 
-const Hem = () => {
+const Home = () => {
     return (
         <HomeWrapper>
             <ImageSlideShow/>
@@ -13,7 +13,7 @@ const Hem = () => {
     )
 }
 
-export default Hem
+export default Home
 
 const HomeWrapper = styled.section`
   margin: 0 20px;

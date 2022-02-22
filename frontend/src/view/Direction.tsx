@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const OmOss = () => {
+const VGbeskrivning = () => {
 
     return (
-        <AboutWrapper>
-            <h1>Om oss</h1>
+        <DirectionWrapper>
+            <h1>Vägbeskrivning & Karta</h1>
             <br/>
             <br/>
             <br/>
@@ -22,12 +22,12 @@ const OmOss = () => {
             <br/>
             <br/>
             <br/>
-        </AboutWrapper>
+        </DirectionWrapper>
     )
 }
 
-export default OmOss
+export default VGbeskrivning
 
-const AboutWrapper = styled.section`
-  margin: 0 20px;
+const DirectionWrapper = styled.section`
+  margin: 1px 20px;
 `

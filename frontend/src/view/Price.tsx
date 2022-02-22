@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Pris = () => {
+const Price = () => {
     
     return (
         <PriceWrapper>
@@ -87,7 +87,7 @@ const Pris = () => {
     )
 }
 
-export default Pris
+export default Price
 
 const PriceWrapper = styled.section`
   margin: 1px 20px;

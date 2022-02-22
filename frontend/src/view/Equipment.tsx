@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import utrustning from "../utils/images/Utrustning.jpg";
+import Equipments from "../utils/images/Equipments.jpg";
 
-const Utrustning = () => {
+const Equipment = () => {
     
     return (
-        <UtrustningWrapper>
+        <EquipmentWrapper>
             <SectionOne>
                 <h1>Utrustning</h1>
             </SectionOne>
@@ -16,7 +16,7 @@ const Utrustning = () => {
                 </p>
             </SectionTwo>
             <SectionThree>
-                <img src={ utrustning } alt='La_Cuvée images'/>
+                <img src={ Equipments } alt='La_Cuvée images'/>
             </SectionThree>
             <SectionFour>
                 <h2><u>Möbler</u></h2>
@@ -57,13 +57,13 @@ const Utrustning = () => {
                 <br/>
                 <p><sub>*Observera att denna listan kan ändras utan anmodan.*</sub></p>
             </SectionSix>
-        </UtrustningWrapper>
+        </EquipmentWrapper>
     )
 }
 
-export default Utrustning
+export default Equipment
 
-const UtrustningWrapper = styled.section`
+const EquipmentWrapper = styled.section`
   margin: 1px 20px;
   box-sizing: border-box;
   background-color: var(--fourthly-color);

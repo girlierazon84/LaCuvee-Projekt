@@ -1,19 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import DayPicker, { DateUtils } from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
 
-const Boka = () => {
+const Booking = () => {
+    
+    
     return (
-        <BookWrapper>
+        <BookingWrapper>
             <SectionOne>
                 <h1>Boka</h1>
             </SectionOne>
-        </BookWrapper>
+            <SectionTwo>
+            </SectionTwo>
+        </BookingWrapper>
     )
 }
 
-export default Boka
+export default Booking
 
-const BookWrapper = styled.section`
+const BookingWrapper = styled.section`
   margin: 1px 20px;
   box-sizing: border-box;
   background-color: var(--fourthly-color);
@@ -29,10 +35,6 @@ const BookWrapper = styled.section`
 const SectionOne = styled.section`
   padding: 50px;
 
-  .header {
-    grid-area: top;
-  }
-
   h1 {
     font-size: 50px;
   }
@@ -43,5 +45,13 @@ const SectionOne = styled.section`
     h1 {
       font-size: 35px;
     }
+  }
+`
+
+const SectionTwo = styled.section`
+  padding: 50px;
+  
+  @media (max-width: 1100px) {
+    padding: 20px;
   }
 `

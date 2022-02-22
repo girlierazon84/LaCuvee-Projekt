@@ -22,13 +22,13 @@ const RightNav: React.FC<Props> = ({ open }) => {
         <>
             <Ul open={ open }>
                 <LiRight>
-                    <Link to={ RoutingPath.bokaView }>
+                    <Link to={ RoutingPath.bookingView }>
                         <ListItemText className='nav__links' primary='Boka'/>
                     </Link>
                 </LiRight>
 
                 <LiRight>
-                    <Link to={ RoutingPath.prisView }>
+                    <Link to={ RoutingPath.priceView }>
                         <ListItemText className='nav__links' primary='Pris'/>
                     </Link>
                 </LiRight>
@@ -42,22 +42,22 @@ const RightNav: React.FC<Props> = ({ open }) => {
                     <Collapse in={ openMenu }  timeout='auto'  unmountOnExit>
                         <List className='dropdown__lists'>
                             <ListItem className='list__items festlokal'>
-                                <Link className='links' to={ RoutingPath.festlokalView }>
+                                <Link className='links' to={ RoutingPath.partyVenueView }>
                                     <ListItemText className='festlokal' primary='Festlokal'/>
                                 </Link>
                             </ListItem>
                             <ListItem className='list__items'>
-                                <Link className='links' to={ RoutingPath.vinkallareView }>
+                                <Link className='links' to={ RoutingPath.wineCellarView }>
                                     <ListItemText primary='Vinkällare'/>
                                 </Link>
                             </ListItem>
                             <ListItem className='list__items'>
-                                <Link className='links' to={ RoutingPath.dukningView }>
+                                <Link className='links' to={ RoutingPath.tableSettingView }>
                                     <ListItemText primary='Dukning'/>
                                 </Link>
                             </ListItem>
                             <ListItem className='list__items  utrustning'>
-                                <Link className='links' to={ RoutingPath.utrustningView }>
+                                <Link className='links' to={ RoutingPath.equipmentView }>
                                     <ListItemText primary='Utrustning'/>
                                 </Link>
                             </ListItem>
@@ -66,19 +66,19 @@ const RightNav: React.FC<Props> = ({ open }) => {
                 </LiRight>
 
                 <LiRight>
-                    <Link to={ RoutingPath.kontaktView }>
+                    <Link to={ RoutingPath.contactView }>
                         <ListItemText className='nav__links' primary='Kontakt'/>
                     </Link>
                 </LiRight>
 
                 <LiRight>
-                    <Link to={ RoutingPath.omOssView }>
+                    <Link to={ RoutingPath.aboutUsView }>
                         <ListItemText className='nav__links' primary='Om oss'/>
                     </Link>
                 </LiRight>
 
                 <LiRight>
-                    <Link to={ RoutingPath.hemView }>
+                    <Link to={ RoutingPath.homeView }>
                         <ListItemText className='nav__links' primary='Hem'/>
                     </Link>
                 </LiRight>

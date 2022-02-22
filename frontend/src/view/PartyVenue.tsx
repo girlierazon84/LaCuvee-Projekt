@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import festlokal from '../utils/images/festlokalen.jpg'
+import Party_Venue from '../utils/images/PartyVenue.jpg'
 
-const Festlokal = () => {
+const PartyVenue = () => {
 
     return (
-        <FestWrapper>
+        <PartyWrapper>
             <SectionOne className='header'>
                 <h1>Festlokalen</h1>
             </SectionOne>
             <SectionTwo className='image'>
-                <img src={ festlokal } alt='La_Cuvée images'/>
+                <img src={ Party_Venue } alt='La_Cuvée images'/>
             </SectionTwo>
             <SectionThree className='paragraph'>
                 <p>
@@ -48,13 +48,13 @@ const Festlokal = () => {
                     komma på en visning!
                 </p>
             </SectionThree>
-        </FestWrapper>
+        </PartyWrapper>
     )
 }
 
-export default Festlokal
+export default PartyVenue
 
-const FestWrapper = styled.section`
+const PartyWrapper = styled.section`
   margin: 1px 20px;
   box-sizing: border-box;
   background-color: var(--fourthly-color);

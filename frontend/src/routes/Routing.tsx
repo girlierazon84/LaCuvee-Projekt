@@ -1,18 +1,18 @@
 import React from 'react'
 import { Route } from "react-router"
-import { BrowserRouter, Navigate, Routes } from "react-router-dom"
+import { BrowserRouter, Routes } from "react-router-dom"
 import RoutingPath from "./RoutingPath";
-import Hem from "../view/Hem";
-import OmOss from "../view/OmOss";
-import Festlokal from "../view/Festlokal";
-import Vinkallare from "../view/Vinkallare";
-import Dukning from "../view/Dukning";
-import Utrustning from "../view/Utrustning";
-import Pris from "../view/Pris";
-import Boka from "../view/Boka";
-import Kontakt from "../view/Kontakt";
+import Home from "../view/Home";
+import AboutUs from "../view/AboutUs";
+import PartyVenue from "../view/PartyVenue";
+import WineCellar from "../view/WineCellar";
+import TableSetting from "../view/TableSetting";
+import Equipment from "../view/Equipment";
+import Price from "../view/Price";
+import Booking from "../view/Booking";
+import Contact from "../view/Contact";
 import FAQ from "../view/FAQ";
-import Vagbeskrivning from "../view/Vagbeskrivning";
+import Direction from "../view/Direction";
 
 export const Routing = (props: { children?: React.ReactChild }) => {
 
@@ -20,17 +20,17 @@ export const Routing = (props: { children?: React.ReactChild }) => {
         <BrowserRouter>
             { props.children }
             <Routes>
-                <Route path={ RoutingPath.hemView } element={ <Hem/> }/>
-                <Route path={ RoutingPath.omOssView } element={ <OmOss/> }/>
-                <Route path={ RoutingPath.festlokalView } element={ <Festlokal/> }/>
-                <Route path={ RoutingPath.vinkallareView } element={ <Vinkallare/> }/>
-                <Route path={ RoutingPath.dukningView } element={ <Dukning/> }/>
-                <Route path={ RoutingPath.utrustningView } element={ <Utrustning/> }/>
-                <Route path={ RoutingPath.prisView } element={ <Pris/> }/>
-                <Route path={ RoutingPath.bokaView } element={ <Boka/> }/>
-                <Route path={ RoutingPath.kontaktView } element={ <Kontakt/> }/>
+                <Route path={ RoutingPath.homeView } element={ <Home/> }/>
+                <Route path={ RoutingPath.aboutUsView } element={ <AboutUs/> }/>
+                <Route path={ RoutingPath.partyVenueView } element={ <PartyVenue/> }/>
+                <Route path={ RoutingPath.wineCellarView } element={ <WineCellar/> }/>
+                <Route path={ RoutingPath.tableSettingView } element={ <TableSetting/> }/>
+                <Route path={ RoutingPath.equipmentView } element={ <Equipment/> }/>
+                <Route path={ RoutingPath.priceView } element={ <Price/> }/>
+                <Route path={ RoutingPath.bookingView } element={ <Booking/> }/>
+                <Route path={ RoutingPath.contactView } element={ <Contact/> }/>
                 <Route path={ RoutingPath.faqView } element={ <FAQ/> }/>
-                <Route path={ RoutingPath.vagbeskrivningView } element={ <Vagbeskrivning/> }/>
+                <Route path={ RoutingPath.directionView } element={ <Direction/> }/>
             </Routes>
         </BrowserRouter>
     )

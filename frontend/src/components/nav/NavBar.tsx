@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
 
     return (
         <Nav>
-            <Link to={ RoutingPath.hemView}>
+            <Link to={ RoutingPath.homeView}>
                 <img className="LC__logo"
                      src={ LaCuveeLogo }
                      alt='La_Cuvée Logo'/>

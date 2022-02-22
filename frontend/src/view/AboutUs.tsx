@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Vagbeskrivning = () => {
+const AboutUs = () => {
 
     return (
-        <VagWrapper>
-            <h1>Vägbeskrivning & Karta</h1>
+        <AboutWrapper>
+            <h1>Om oss</h1>
             <br/>
             <br/>
             <br/>
@@ -22,12 +22,12 @@ const Vagbeskrivning = () => {
             <br/>
             <br/>
             <br/>
-        </VagWrapper>
+        </AboutWrapper>
     )
 }
 
-export default Vagbeskrivning
+export default AboutUs
 
-const VagWrapper = styled.section`
+const AboutWrapper = styled.section`
   margin: 0 20px;
 `

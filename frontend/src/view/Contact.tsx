@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import sign from "../utils/images/sign.jpg";
 
-const Kontakt = () => {
+const Contact = () => {
     
     return (
         <ContactWrapper>
@@ -28,7 +28,7 @@ const Kontakt = () => {
     )
 }
 
-export default Kontakt
+export default Contact
 
 const ContactWrapper = styled.section`
   margin: 1px 20px;

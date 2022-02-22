@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import VinOne from '../utils/images/VinOne.jpg'
-import VinTwo from '../utils/images/VinTwo.jpg'
-import VinThree from '../utils/images/VinThree.jpg'
-import VinFour from '../utils/images/VinFour.jpg'
+import WineOne from '../utils/images/WineOne.jpg'
+import WineTwo from '../utils/images/WineTwo.jpg'
+import WineThree from '../utils/images/WineThree.jpg'
+import WineFour from '../utils/images/WineFour.jpg'
 
-const Vinkallare = () => {
+const WineCellar = () => {
 
     return (
-        <VinWrapper>
+        <WineWrapper>
             <SectionOne>
                 <h1>Vinkällaren</h1>
             </SectionOne>
@@ -49,29 +49,29 @@ const Vinkallare = () => {
             <h3>Bilder...</h3>
             <SectionSix>
                 <div className='vin__one'>
-                    <img src={ VinOne } alt='La_Cuvée images'/>
+                    <img src={ WineOne } alt='La_Cuvée images'/>
                     <h5>Vinfack</h5>
                 </div>
                 <div className='vin__two'>
-                    <img src={ VinTwo } alt='La_Cuvée images'/>
+                    <img src={ WineTwo } alt='La_Cuvée images'/>
                     <h5>Vinprovningsrummet</h5>
                 </div>
                 <div className='vin__three'>
-                    <img src={ VinThree } alt='La_Cuvée images'/>
+                    <img src={ WineThree } alt='La_Cuvée images'/>
                     <h5>Bergväggen ger atmosfär</h5>
                 </div>
                 <div className='vin__four'>
-                    <img src={ VinFour } alt='La_Cuvée images'/>
+                    <img src={ WineFour } alt='La_Cuvée images'/>
                     <h5>Prova vin med vännerna?</h5>
                 </div>
             </SectionSix>
-        </VinWrapper>
+        </WineWrapper>
     )
 }
 
-export default Vinkallare
+export default WineCellar
 
-const VinWrapper = styled.section`
+const WineWrapper = styled.section`
   margin: 1px 20px;
   box-sizing: border-box;
   background-color: var(--fourthly-color);

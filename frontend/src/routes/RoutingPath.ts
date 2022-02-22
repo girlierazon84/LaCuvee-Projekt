@@ -1,15 +1,15 @@
 const RoutingPath = {
-    hemView: '/',
-    omOssView: '/om_oss',
-    festlokalView: '/festlokal',
-    vinkallareView: '/vinkallare',
-    dukningView: '/dukning',
-    utrustningView: '/utrustning',
-    prisView: '/pris',
-    bokaView: '/boka',
-    kontaktView: '/kontakt',
+    homeView: '/',
+    aboutUsView: '/om_oss',
+    partyVenueView: '/festlokal',
+    wineCellarView: '/vinkallare',
+    tableSettingView: '/dukning',
+    equipmentView: '/utrustning',
+    priceView: '/pris',
+    bookingView: '/boka',
+    contactView: '/kontakt',
     faqView: '/faq',
-    vagbeskrivningView: '/vagbeskrivning'
+    directionView: '/vagbeskrivning'
 }
 
 export default RoutingPath

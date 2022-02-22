@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import dukning from "../utils/images/Dukning.jpg";
+import Table_Setting from "../utils/images/TableSetting.jpg";
 
-const Dukning = () => {
+const TableSetting = () => {
     
     return (
         <DukningWrapper>
@@ -11,7 +11,7 @@ const Dukning = () => {
             </SectionOne>
     
             <SectionTwo className='image'>
-                <img src={ dukning } alt='La_Cuvée images'/>
+                <img src={ Table_Setting } alt='La_Cuvée images'/>
             </SectionTwo>
             
             <SectionThree className='paragraph'>
@@ -44,7 +44,7 @@ const Dukning = () => {
     )
 }
 
-export default Dukning
+export default TableSetting
 
 const DukningWrapper = styled.section`
   margin: 1px 20px;
