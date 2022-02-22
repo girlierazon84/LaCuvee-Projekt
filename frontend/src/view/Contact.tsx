@@ -42,7 +42,6 @@ const ContactWrapper = styled.section`
   grid-template-rows: 150px 2fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'top top'
-                    'right left'
                     'right left';
 
   @media (max-width: 1100px) {
