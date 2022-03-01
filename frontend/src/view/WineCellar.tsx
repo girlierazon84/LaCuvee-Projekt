@@ -245,7 +245,7 @@ const SectionSix = styled.section`
 
 
     img {
-      width: 100%;
+      width: 395px;
     }
     
     .vin__one,
