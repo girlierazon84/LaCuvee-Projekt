@@ -117,6 +117,7 @@ const SectionOne = styled.section`
 
     h1 {
       font-size: 35px;
+      padding: 20px 0;
     }
   }
 `
