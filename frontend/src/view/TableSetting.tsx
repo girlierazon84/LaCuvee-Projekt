@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import Table_Setting from "../utils/images/TableSetting.jpg";
 
 const TableSetting = () => {
@@ -11,7 +13,9 @@ const TableSetting = () => {
             </SectionOne>
     
             <SectionTwo className='image'>
-                <img src={ Table_Setting } alt='La_Cuvée images'/>
+                <Zoom>
+                    <img src={ Table_Setting } alt='La_Cuvée images' width='100%'/>
+                </Zoom>
             </SectionTwo>
             
             <SectionThree className='paragraph'>
@@ -52,7 +56,8 @@ const DukningWrapper = styled.section`
   background-color: var(--fourthly-color);
   color: var(--primary-color);
   text-align: justify;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
+  line-height: 2em;
   display: grid;
   grid-template-rows: 150px 2fr;
   grid-template-columns: 2fr 1fr;
@@ -96,7 +101,7 @@ const SectionTwo = styled.section`
 
   img {
     width: 89%;
-    height: 367px;
+    height: 405px;
     border: 1px solid var(--secondary-color);
   }
 

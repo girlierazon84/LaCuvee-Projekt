@@ -95,7 +95,11 @@ const PriceWrapper = styled.section`
   background-color: var(--fourthly-color);
   color: var(--primary-color);
   text-align: justify;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
+
+  @media (max-width: 1100px) {
+    margin: 1px;
+  }
 `
 
 const SectionOne = styled.section`
@@ -106,7 +110,7 @@ const SectionOne = styled.section`
   }
 
   @media (max-width: 1100px) {
-    padding: 20px 10px;
+    padding: 20px;
 
     h1 {
       font-size: 35px;
@@ -116,7 +120,6 @@ const SectionOne = styled.section`
 
 const SectionTwo = styled.section`
   margin: 0 50px;
-  font-family: 'Oxygen - Regular', sans-serif;
 
   table {
     border-collapse: collapse;
@@ -142,18 +145,19 @@ const SectionTwo = styled.section`
   }
 
   @media (max-width: 1100px) {
-    margin: 0;
+    margin: 0 20px;
   }
 `
 
 const SectionThree = styled.section`
   padding: 50px;
+  line-height: 2em;
 
   p {
     font-size: 19px;
   }
 
   @media (max-width: 1100px) {
-    padding: 50px 10px;
+    padding: 20px;
   }
 `

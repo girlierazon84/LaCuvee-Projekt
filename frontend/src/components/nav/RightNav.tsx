@@ -64,16 +64,16 @@ const RightNav: React.FC<Props> = ({ open }) => {
                         </List>
                     </Collapse>
                 </LiRight>
-
+                
                 <LiRight>
-                    <Link to={ RoutingPath.contactView }>
-                        <ListItemText className='nav__links' primary='Kontakt'/>
+                    <Link to={ RoutingPath.imageView }>
+                        <ListItemText className='nav__links' primary='Bilder'/>
                     </Link>
                 </LiRight>
 
                 <LiRight>
-                    <Link to={ RoutingPath.aboutUsView }>
-                        <ListItemText className='nav__links' primary='Om oss'/>
+                    <Link to={ RoutingPath.contactView }>
+                        <ListItemText className='nav__links' primary='Kontakt'/>
                     </Link>
                 </LiRight>
 

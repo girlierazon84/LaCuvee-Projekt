@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import sign from "../utils/images/sign.jpg";
 
 const Contact = () => {
@@ -10,7 +12,9 @@ const Contact = () => {
                 <h1>Kontakt</h1>
             </SectionOne>
             <SectionTwo className='image'>
-                <img src={ sign } alt='La_Cuvée images'/>
+                <Zoom>
+                    <img src={ sign } alt='La_Cuvée images' width='100%'/>
+                </Zoom>
             </SectionTwo>
             <SectionThree>
                 <p>Festlokal och vinkällare La Cuvée drivs av Tokali AB,</p>

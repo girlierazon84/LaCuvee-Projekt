@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import Equipments from "../utils/images/Equipments.jpg";
 
 const Equipment = () => {
@@ -16,45 +18,109 @@ const Equipment = () => {
                 </p>
             </SectionTwo>
             <SectionThree>
-                <img src={ Equipments } alt='La_Cuvée images'/>
+                <Zoom>
+                    <img src={ Equipments } alt='La_Cuvée images' width='100%'/>
+                </Zoom>
             </SectionThree>
             <SectionFour>
-                <h2><u>Möbler</u></h2>
-                <p>15 bord 120 stolar 8 extra bord (annan sort)</p>
+                <table>
+                    <tr>
+                        <th>Möbler</th>
+                        <th>Stycke</th>
+                    </tr>
+                    <tr>
+                        <td>Bord</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Stolar</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Bord (annan sort)</td>
+                        <td>8</td>
+                    </tr>
+                </table>
             </SectionFour>
             <SectionFive>
-                <h2><u>Porslin m.m</u></h2>
-                <ul>
-                    <li>120 stora tallrikar</li>
-                    <li>120 mellantallrikar</li>
-                    <li>120 små tallrikar</li>
-                    <li>120 djupa tallrikar</li>
-                    <li>120 kaffekoppar med tillhörande fat</li>
-                    <li>120 dricksglas</li>
-                    <li>120 vinglas</li>
-                    <li>120 st av alla bestickdelar för huvudrätt, dessert alt förrätt, samt soppa</li>
-                    <li>120 champagneglas</li>
-                    <li>120 avecglas</li>
-                    <li>120 buffétallrikar</li>
-                </ul>
+                <table>
+                    <tr>
+                        <th>Porslin m.m</th>
+                        <th>Stycke</th>
+                    </tr>
+                    <tr>
+                        <td>Stora Tallrikar</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Mellan Tallrikar</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Små Tallrikar</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Djupa Tallrikar</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Kaffekoppar med tillhörande fat</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Dricksglas</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Vinglas</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Alla Bestickdelar för Huvudrätt, Dessert alt Förrätt, samt soppa</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Champagneglas</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Avecglas</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Buffét Tallrikar</td>
+                        <td>120</td>
+                    </tr>
+                </table>
             </SectionFive>
+            
             <SectionSix>
-                <h2><u>Övrigt</u></h2>
-                <ul>
-                    <li>Nysilverkandelabrar</li>
-                    <li>Projektorduk</li>
-                    <li>Ljushållare för värmeljus</li>
-                    <li>Tekannor</li>
-                    <li>Termosar</li>
-                    <li>Vattenkaraffer i plast</li>
-                    <li>Vinkaraffer i glas</li>
-                    <li>Kaffekokare, en större och en mindre</li>
-                    <li>Städmaterial</li>
-                    <li>Toalettpapper och pappershanddukar</li>
-                </ul>
-                <br/>
-                <br/>
-                <br/>
+                <table>
+                    <tr>
+                        <th>Övrigt</th>
+                    </tr>
+                    <tr>
+                        <td>Nysilverkandelabrar</td>
+                        <td>Projektorduk</td>
+                    </tr>
+                    <tr>
+                        <td>Ljushållare för värmeljus</td>
+                        <td>Tekannor</td>
+                    </tr>
+                    <tr>
+                        <td>Termosar</td>
+                        <td>Vattenkaraffer i plast</td>
+                    </tr>
+                    <tr>
+                        <td>Vinkaraffer i glas</td>
+                        <td>Kaffekokare, en större och en mindre</td>
+                    </tr>
+                    <tr>
+                        <td>Städmaterial</td>
+                        <td>Toalettpapper och pappershanddukar</td>
+                    </tr>
+                </table>
                 <p><sub>*Observera att denna listan kan ändras utan anmodan.*</sub></p>
             </SectionSix>
         </EquipmentWrapper>
@@ -66,18 +132,19 @@ export default Equipment
 const EquipmentWrapper = styled.section`
   margin: 1px 20px;
   box-sizing: border-box;
+  height: 100%;
   background-color: var(--fourthly-color);
   color: var(--primary-color);
   text-align: justify;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
   display: grid;
-  grid-template-rows: 150px 150px 150px 2fr 2fr;
-  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 150px 150px 150px 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-areas: 'top top'
                        'bottom bottom'
-                       'bottom-left right'
                        'bottom-left-one right'
-                       'bottom-left-two right';
+                       'bottom-left-two right'
+                       'bottom-left-two bottom-right';
 
   @media (max-width: 1100px) {
     margin: 1px;
@@ -107,6 +174,7 @@ const SectionOne = styled.section`
 
 const SectionTwo = styled.section`
   margin: 0 50px;
+  line-height: 2em;
   grid-area: bottom;
   
   p {
@@ -119,12 +187,12 @@ const SectionTwo = styled.section`
 `
 
 const SectionThree = styled.section`
-  margin-top: 10px;
+  margin-top: 0;
   grid-area: right;
   
   img {
-    width: 95%;
-    height: 940px;
+    width: 690px;
+    height: 440px;
     border: 1px solid var(--secondary-color);
   }
 
@@ -139,11 +207,31 @@ const SectionThree = styled.section`
 `
 
 const SectionFour = styled.section`
-  margin: 0 50px 0 50px;
-  grid-area: bottom-left;
+  margin: 0 50px;
+  line-height: 2em;
+  grid-area: bottom-left-one;
   
-  p {
-    font-size: 20px;
+  table {
+    border-collapse: collapse;
+    padding: 70px;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid peachpuff;
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+
+  tr:hover {background-color: #ddd;}
+
+  th {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to bottom, var(--thirdly-color), var(--secondary-color));
+    color: var(--fourthly-color);
   }
 
   @media (max-width: 1100px) {
@@ -152,12 +240,31 @@ const SectionFour = styled.section`
 `
 
 const SectionFive = styled.section`
-  margin: 0 50px 0 50px;
-  grid-area: bottom-left-one;
+  margin: 0 50px 50px 50px;
+  line-height: 2em;
+  grid-area: bottom-left-two;
 
-  li {
-    margin-left: 30px;
-    font-size: 20px;
+  table {
+    border-collapse: collapse;
+    padding: 70px;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid peachpuff;
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+
+  tr:hover {background-color: #ddd;}
+
+  th {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to bottom, var(--thirdly-color), var(--secondary-color));
+    color: var(--fourthly-color);
   }
 
   @media (max-width: 1100px) {
@@ -166,16 +273,36 @@ const SectionFive = styled.section`
 `
 
 const SectionSix = styled.section`
-  padding: 0 50px 0 50px;
-  grid-area: bottom-left-two;
+  padding: 0 50px 0 0;
+  width: 100%;
+  grid-area: bottom-right;
   
-  li {
-    margin-left: 30px;
-    font-size: 20px;
+  table {
+    border-collapse: collapse;
+    padding: 70px;
+    width: 100%;
   }
 
+  td, th {
+    border: 1px solid peachpuff;
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2;}
+
+  tr:hover {background-color: #ddd;}
+
+  th {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to bottom, var(--thirdly-color), var(--secondary-color));
+    color: var(--fourthly-color);
+  }
+  
   p {
-    font-size: 20px;
+    padding-top: 27px;
+    color: var(--thirdly-color);
   }
 
   @media (max-width: 1100px) {

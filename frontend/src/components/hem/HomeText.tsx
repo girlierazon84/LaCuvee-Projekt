@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const HomeText = () => {
+    
     return (
         <TextWrapper>
             <SectionOne>
@@ -24,7 +25,6 @@ const HomeText = () => {
                     Här kan du förvara ditt vin, men ändå ha det lättåtkomligt med ditt personliga passerkort.
                 </p>
             </SectionThree>
-
         </TextWrapper>
     )
 }
@@ -32,14 +32,16 @@ const HomeText = () => {
 export default HomeText
 
 const TextWrapper = styled.section`
+  width: 100%;
   box-sizing: border-box;
   background-color: var(--fourthly-color);
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
   color: var(--primary-color);
 `
 
 const SectionOne = styled.section`
-  padding: 50px;
+  padding: 50px 270px;
+  line-height: 2em;
   
   h1 {
     font-size: 30px;
@@ -55,10 +57,11 @@ const SectionOne = styled.section`
 `
 
 const SectionTwo = styled.section`
-  padding: 0 50px 10px 50px;
+  padding: 0 270px 10px 270px;
+  line-height: 2em;
   
   h5 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   @media (max-width: 1100px) {
@@ -71,11 +74,12 @@ const SectionTwo = styled.section`
 `
 
 const SectionThree = styled.section`
-  padding: 0 50px 50px 50px;
+  padding: 0 270px;
+  line-height: 2em;
   
   p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   @media (max-width: 1100px) {

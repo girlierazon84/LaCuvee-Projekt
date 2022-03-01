@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import WineOne from '../utils/images/WineOne.jpg'
 import WineTwo from '../utils/images/WineTwo.jpg'
 import WineThree from '../utils/images/WineThree.jpg'
@@ -49,19 +51,27 @@ const WineCellar = () => {
             <h3>Bilder...</h3>
             <SectionSix>
                 <div className='vin__one'>
-                    <img src={ WineOne } alt='La_Cuvée images'/>
+                    <Zoom>
+                        <img src={ WineOne } alt='La_Cuvée images' width='100%'/>
+                    </Zoom>
                     <h5>Vinfack</h5>
                 </div>
                 <div className='vin__two'>
-                    <img src={ WineTwo } alt='La_Cuvée images'/>
+                    <Zoom>
+                        <img src={ WineTwo } alt='La_Cuvée images' width='100%'/>
+                    </Zoom>
                     <h5>Vinprovningsrummet</h5>
                 </div>
                 <div className='vin__three'>
-                    <img src={ WineThree } alt='La_Cuvée images'/>
+                    <Zoom>
+                        <img src={ WineThree } alt='La_Cuvée images' width='100%'/>
+                    </Zoom>
                     <h5>Bergväggen ger atmosfär</h5>
                 </div>
                 <div className='vin__four'>
-                    <img src={ WineFour } alt='La_Cuvée images'/>
+                    <Zoom>
+                        <img src={ WineFour } alt='La_Cuvée images' width='100%'/>
+                    </Zoom>
                     <h5>Prova vin med vännerna?</h5>
                 </div>
             </SectionSix>
@@ -77,7 +87,8 @@ const WineWrapper = styled.section`
   background-color: var(--fourthly-color);
   color: var(--primary-color);
   text-align: justify;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
+  line-height: 2em;
   
   h3 {
     text-align: justify;
@@ -94,10 +105,11 @@ const WineWrapper = styled.section`
 `
 
 const SectionOne = styled.section`
-  padding: 50px 50px 20px 50px;
+  padding: 50px;
+  line-height: 2em;
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   @media (max-width: 1100px) {
@@ -111,6 +123,7 @@ const SectionOne = styled.section`
 
 const SectionTwo = styled.section`
   margin: 0 50px;
+  line-height: 2em;
   
   h5 {
     font-size: 25px;
@@ -161,6 +174,7 @@ const SectionThree = styled.section`
 
 const SectionFour = styled.section`
   margin: 0 50px;
+  line-height: 2em;
 
   h5 {
     font-size: 25px;
@@ -186,6 +200,7 @@ const SectionFour = styled.section`
 
 const SectionFive = styled.section`
   margin: 0 50px 50px 50px;
+  line-height: 2em;
 
   p {
     text-align: justify;

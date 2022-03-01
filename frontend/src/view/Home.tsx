@@ -7,19 +7,21 @@ import HomeText from "../components/hem/HomeText";
 const Home = () => {
     return (
         <HomeWrapper>
-            <ImageSlideShow/>
             <HomeText/>
+            <ImageSlideShow/>
+            <br/>
+            <br/>
         </HomeWrapper>
     )
 }
 
 export default Home
 
-const HomeWrapper = styled.section`
-  margin: 0 20px;
-  padding: 0;
+const HomeWrapper = styled.div`
+  margin: 1px 20px;
+  background-color: var(--fourthly-color);
 
   @media (max-width: 1100px) {
-    margin: 0;
+    margin: 1px;
   }
 `

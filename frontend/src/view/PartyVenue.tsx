@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import Party_Venue from '../utils/images/PartyVenue.jpg'
 
 const PartyVenue = () => {
@@ -10,7 +12,9 @@ const PartyVenue = () => {
                 <h1>Festlokalen</h1>
             </SectionOne>
             <SectionTwo className='image'>
-                <img src={ Party_Venue } alt='La_Cuvée images'/>
+                <Zoom>
+                    <img src={ Party_Venue } alt='La_Cuvée images' width='100%'/>
+                </Zoom>
             </SectionTwo>
             <SectionThree className='paragraph'>
                 <p>
@@ -60,7 +64,8 @@ const PartyWrapper = styled.section`
   background-color: var(--fourthly-color);
   color: var(--primary-color);
   text-align: justify;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Oleo Script', sans-serif;
+  line-height: 2em;
   display: grid;
   grid-template-rows: 150px 2fr;
   grid-template-columns: 2fr 1fr;
@@ -104,8 +109,8 @@ const SectionTwo = styled.section`
   }
   
   img {
-    width: 89%;
-    height: 610px;
+    width: 96.5%;
+    height: 694px;
     border: 1px solid var(--secondary-color);
   }
 
