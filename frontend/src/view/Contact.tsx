@@ -84,7 +84,7 @@ const SectionTwo = styled.section`
   }
 
   img {
-    width: 100%;
+    width: 665px;
     height: 340px;
     border: 1px solid var(--secondary-color);
   }
